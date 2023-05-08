@@ -61,6 +61,56 @@
    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
    heap.load("3836153590");
    </script>
+   <script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push(
+{
+  event : 'purchase_item',
+        ecommerce:
+	{
+		    transaction_id: "T_12345_2",
+                value: 25.42,
+                tax: 4.90,
+                shipping: 5.99,
+                currency: "USD",
+                coupon: "SUMMER_SALE",
+                items:[{
+            		item_name:"Web Analytics",
+            		item_id:"Course_001",
+            		item_cat:"Online Courses"
+	},
+		       {     	item_id: "SKU_12345",
+      				item_name: "Stan and Friends Tee",
+      				affiliation: "Google Merchandise Store",
+      				coupon: "SUMMER_FUN",
+      				discount: 2.22,
+     				index: 0,
+		       },
+		       {
+      			item_brand: "Google",
+      			item_category: "Apparel",
+      			item_category2: "Adult",
+      			item_category3: "Shirts",
+     			item_category4: "Crew",
+      			item_category5: "Short sleeve",
+		       },
+		       {
+      			item_list_id: "related_products",
+      			item_list_name: "Related Products",
+      			item_variant: "green",
+     			location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      			price: 9.99,
+      			quantity: 1
+		       },
+		       {
+			item_list_id: "apparel",
+      			item_list_name: "Related Products",
+      			item_variant: "pink",
+		       }
+		       ]
+	}
+});
+</script>
 </head>
 
 <body>
